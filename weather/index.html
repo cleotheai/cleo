@@ -164,7 +164,7 @@ body {
 
 #windguru-widget {
   width: 100%;
-  min-height: 400px;
+  min-height: 600px;
   background: var(--bg);
 }
 
@@ -401,35 +401,46 @@ body {
 </div>
 
 <script>
-// Windguru widget — embedded live forecast
-(function (window, document) {
-  var loader = function () {
-    var arg = [
-      "s=32728",
-      "m=100",
-      "mw=84",
-      "uid=wg_fwdg_32728_100_1790433326398",
-      "wj=knots",
-      "tj=c",
-      "waj=m",
-      "tij=m",
-      "odh=0",
-      "doh=24",
-      "fhours=240",
-      "hrsm=1",
-      "vt=forecasts",
-      "lng=en",
-      "idbs=1",
-      "ts=1",
-      "p=WINDSPD,GUST,SMER,HTSGW,PERPW,DIRPW"
+// Windguru widget — direct iframe embed for Bermuda - Crescent (spot 32728)
+(function() {
+    var container = document.getElementById('windguru-widget');
+    if (!container) return;
+    
+    var params = [
+        "s=32728",
+        "m=100",
+        "mw=84",
+        "uid=wg_fwdg_32728_100_1790433326398",
+        "wj=knots",
+        "tj=c",
+        "waj=m",
+        "tij=m",
+        "odh=0",
+        "doh=24",
+        "fhours=240",
+        "hrsm=1",
+        "vt=forecasts",
+        "lng=en",
+        "idbs=1",
+        "ts=1",
+        "p=WINDSPD,GUST,SMER,HTSGW,PERPW,DIRPW"
     ];
-    var script = document.createElement("script");
-    var tag = document.getElementsByTagName("script")[0];
-    script.src = "https://www.windguru.cz/js/widget.php?" + (arg.join("&"));
-    tag.parentNode.insertBefore(script, tag);
-  };
-  window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
-})(window, document);
+    
+    // Add hostname and URL as widget.php does for origin checking
+    var loc = window.location;
+    params.push("hostname=" + encodeURIComponent(loc.hostname || "cleotheai.github.io"));
+    params.push("url=" + encodeURIComponent(loc.href || "https://cleotheai.github.io/cleo/weather/"));
+    
+    var iframe = document.createElement("iframe");
+    iframe.setAttribute("scrolling", "no");
+    iframe.setAttribute("seamless", "seamless");
+    iframe.setAttribute("style", "border:none;width:100%;min-height:550px;background:transparent;");
+    iframe.setAttribute("title", "Windguru Bermuda Forecast Widget");
+    iframe.src = "https://www.windguru.cz/widget-fcst-iframe.php?" + params.join("&");
+    
+    container.appendChild(iframe);
+    console.log("Windguru widget iframe loaded: " + iframe.src.substring(0, 80) + "...");
+})();
 </script>
 
 </body>
