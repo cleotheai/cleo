@@ -1,0 +1,90 @@
+{
+  "current": {
+    "recorded_at": "4:55 pm",
+    "condition": "Rain",
+    "temperature_c": 27.0,
+    "humidity": 89
+  },
+  "alerts": [
+    {
+      "title": "Small Craft Warning"
+    },
+    {
+      "title": "Thunderstorm Advisory"
+    }
+  ],
+  "forecast": {
+    "issue": "4:30 pm Saturday, September 26, 2026",
+    "synopsis": null,
+    "headline": "A settled start to the evening, showers returning towards midnight...",
+    "periods": [
+      {
+        "name": "Tonight",
+        "condition": "Tonight - Remaining cloudy with further showers, some heavy & thundery...",
+        "temp_low": 26,
+        "wind_text": "south-southwesterly moderate to strong, with stronger gusts in showers.."
+      },
+      {
+        "name": "Sunday",
+        "condition": "Sunday - Cloudy and damp start, but soon becoming drier and brighter...",
+        "temp_high": 29,
+        "temp_low": 26,
+        "wind_text": "southwesterly moderate, veering west-southwesterly in the afternoon and easing light to moderate by evening, then veering west-northwesterly light overnight.."
+      },
+      {
+        "name": "Monday",
+        "condition": "Monday - Some sunshine, cloudier night with a few showers around...",
+        "temp_high": 29,
+        "temp_low": 26,
+        "wind_text": "west-northwesterly light, becoming variable during the morning, tending to settle north-northeasterly overnight.."
+      },
+      {
+        "name": "Tuesday",
+        "condition": "Tuesday - Sunny periods with an early shower or two...",
+        "temp_high": 29,
+        "temp_low": 25,
+        "wind_text": "north-northeasterly light, increasing light to moderate later and possibly varying in direction at times.."
+      },
+      {
+        "name": "Wednesday",
+        "condition": "Wednesday - Abundant sunshine...",
+        "temp_high": 28,
+        "temp_low": 25,
+        "wind_text": "north-northeasterly light to moderate, tending northerly at times.."
+      }
+    ]
+  },
+  "marine": {},
+  "sun": {
+    "sunrise": "7:09 am",
+    "sunset": "7:10 pm",
+    "moon_rise": "7:03 pm",
+    "moon_set": "6:59 am",
+    "moon_phase": "Full Moon"
+  },
+  "tides": [
+    {
+      "time": "02:46",
+      "height_m": 0.4,
+      "height_ft": 1.3
+    },
+    {
+      "time": "09:03",
+      "height_m": 1.2,
+      "height_ft": 3.9
+    },
+    {
+      "time": "15:09",
+      "height_m": 0.4,
+      "height_ft": 1.3
+    },
+    {
+      "time": "21:19",
+      "height_m": 1.2,
+      "height_ft": 3.9
+    }
+  ],
+  "fetched_at": "2026-09-26 16:55:43 ADT",
+  "wind_from": "Windguru widget (sole wind/wave source \u2014 weather.bm wind/wave data excluded)",
+  "last_updated": "4:30 pm Saturday, September 26, 2026"
+}
