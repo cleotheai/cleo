@@ -152,19 +152,14 @@ body {
 
 /* Windguru widget wrapper */
 .widget-wrapper {
-  background: #0a1628;
-  border: 1px solid #1e3a5f;
+  background: var(--card);
+  border: 1px solid var(--border);
   border-radius: 6px;
   overflow: hidden;
 }
 
 .widget-wrapper .section-header {
   border-radius: 6px 6px 0 0;
-  background: rgba(30,58,95,0.4);
-}
-
-.widget-wrapper .section-body {
-  padding: 12px;
 }
 
 #windguru-widget {
@@ -184,6 +179,7 @@ body {
   height: 300px;
   border: none;
   background: transparent;
+  filter: brightness(0.85) contrast(1.1);
   display: block;
 }
 
