@@ -163,19 +163,24 @@ body {
 }
 
 #windguru-widget {
-  width: 100%;
-  height: 320px;
-  min-height: 320px;
+  width: 550px;
+  height: 300px;
+  margin: 0 auto;
   background: var(--bg);
   overflow: hidden;
   border-radius: 0 0 6px 6px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 #windguru-widget iframe {
-  width: 100%;
-  height: 320px;
+  width: 550px;
+  height: 300px;
   border: none;
   background: transparent;
+  filter: brightness(0.85) contrast(1.1);
+  display: block;
 }
 
 /* Forecast */
@@ -444,11 +449,11 @@ body {
     var iframe = document.createElement("iframe");
     iframe.setAttribute("scrolling", "no");
     iframe.setAttribute("seamless", "seamless");
-    iframe.setAttribute("style", "border:none;width:100%;height:320px;background:transparent;");
+    iframe.setAttribute("style", "border:none;width:550px;height:300px;background:transparent;display:block;");
     iframe.setAttribute("title", "Windguru Bermuda Forecast Widget");
     iframe.src = "https://www.windguru.cz/widget-fcst-iframe.php?" + params.join("&");
     
-    container.style.minHeight = "320px";
+    container.style.minHeight = "300px";
     container.style.overflow = "hidden";
     container.appendChild(iframe);
 })();
