@@ -56,21 +56,9 @@ c = data.get("current", {})
 temp = c.get("temperature_c")
 if temp is not None:
     html = html.replace('id="temp-value">--<', f'id="temp-value">{temp}<')
-cond = c.get("condition")
-if cond:
-    html = html.replace('id="condition-value">--</div>', f'id="condition-value">{cond}</div>')
 hum = c.get("humidity")
 if hum is not None:
     html = html.replace('id="humidity-value">--<', f'id="humidity-value">{hum}<')
-
-# Sea temp from marine
-m = data.get("marine", {})
-sea_temp = m.get("sea_temp_c")
-if sea_temp is not None:
-    html = html.replace('id="seatemp-value">--<', f'id="seatemp-value">{sea_temp}<')
-else:
-    # Remove sea temp card placeholder — no data
-    pass  # Keep as "--" if no data
 
 # === FORECAST ===
 fc = data.get("forecast", {})
