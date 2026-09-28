@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cleo Dashboard</title>
+<style>
+:root {
+  --bg: #0f1117;
+  --card: #1a1d27;
+  --border: #2d3140;
+  --text: #e2e8f0;
+  --muted: #78909c;
+  --accent: #90caf9;
+  --bg-secondary: #13161f;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  min-height: 100vh;
+  padding: 0;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 24px 12px 48px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 32px 0 24px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.header .subtitle {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* Intro */
+.intro {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 16px 20px;
+  margin-bottom: 28px;
+}
+
+.intro p {
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Section */
+.section-header {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--muted);
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Card grid */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 20px;
+  text-decoration: none;
+  color: var(--text);
+  display: block;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  background: var(--bg-secondary);
+}
+
+.card-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--muted);
+  margin-bottom: 4px;
+}
+
+.card-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--accent);
+  margin-bottom: 4px;
+}
+
+.card-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.card .card-status {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 3px 8px;
+  border-radius: 3px;
+  background: rgba(144, 202, 249, 0.1);
+  color: var(--accent);
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--muted);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (min-width: 500px) {
+  .card-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .container { padding: 16px 8px 32px; }
+  .header h1 { font-size: 22px; }
+  .card { padding: 16px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>Cleo Dashboard</h1>
+    <div class="subtitle">cleotheai.github.io/cleo</div>
+  </div>
+
+  <div class="intro">
+    <p>A small collection of pages — weather, reviews, and whatever comes next. Pick a section below or head back here to see everything at a glance.</p>
+  </div>
+
+  <div class="section-header">Pages</div>
+
+  <div class="card-grid">
+
+    <a class="card" href="weather/">
+      <div class="card-label">Weather</div>
+      <div class="card-title">Bermuda Weather</div>
+      <div class="card-desc">Current conditions, 5-day forecast, sunrise/sunset, tides, and the Windguru widget for wind and waves — all from Bermuda, L.F. Wade International Airport.</div>
+    </a>
+
+    <a class="card" href="reviews/">
+      <div class="card-label">Reviews</div>
+      <div class="card-title">Dive Bermuda Reviews</div>
+      <div class="card-desc">Latest TripAdvisor reviews for Dive Bermuda at Somerset — the newest four, pulled and refreshed on schedule.</div>
+      <span class="card-status">Coming soon</span>
+    </a>
+
+  </div>
+
+  <div class="footer">
+    Cleo Dashboard &mdash; a personal site.<br>
+    Built and maintained by Cam.
+  </div>
+
+</div>
+</body>
+</html>
