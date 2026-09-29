@@ -1,25 +1,25 @@
 {
   "current": {
-    "recorded_at": "9:55 am",
-    "condition": "Showers",
-    "temperature_c": 26.0,
-    "humidity": 92
+    "recorded_at": "1:55 pm",
+    "condition": "Partly Cloudy",
+    "temperature_c": 29.0,
+    "humidity": 68
   },
   "alerts": [],
   "forecast": {
-    "issue": "5:30 am Tuesday, September 29, 2026",
+    "issue": "11:30 am Tuesday, September 29, 2026",
     "synopsis": null,
-    "headline": "Showers and thunder still hovering around...",
+    "headline": "Gradually becoming drier and brighter...",
     "periods": [
       {
         "name": "Today",
-        "condition": "Today - Early cloud with showers around, drier & brighter after noon...",
+        "condition": "Today - A mix of sun and cloud, chance of a shower or two...",
         "temp_high": 29,
-        "wind_text": "west-northwesterly light, varying in direction at times during the morning, then veering northerly by afternoon.."
+        "wind_text": "west-northwesterly light, veering north-northwesterly during the afternoon.."
       },
       {
         "name": "Tonight",
-        "condition": "Tonight - Partly cloudy...",
+        "condition": "Tonight - Partly cloudy with the chance of a sprinkle...",
         "temp_low": 24,
         "wind_text": "north-northwesterly light, veering northerly late night.."
       },
@@ -82,7 +82,7 @@
       "height_ft": 3.6
     }
   ],
-  "fetched_at": "2026-09-29 10:18:14 ADT",
+  "fetched_at": "2026-09-29 13:53:59 ADT",
   "wind_from": "Windguru widget (sole wind/wave source \u2014 weather.bm wind/wave data excluded)",
-  "last_updated": "5:30 am Tuesday, September 29, 2026"
+  "last_updated": "11:30 am Tuesday, September 29, 2026"
 }
