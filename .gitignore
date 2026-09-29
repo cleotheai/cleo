@@ -1,0 +1,7 @@
+# Ignore Python bytecode caches
+__pycache__/
+*.pyc
+*.pyo
+
+# Local run artifacts
+update.log

@@ -327,13 +327,14 @@ body {
   <div class="header">
     <h1>Bermuda Weather</h1>
     <div class="location">Bermuda — L.F. Wade International Airport</div>
-    <div class="updated" id="last-updated">Updated: 4:30 pm Saturday, September 26, 2026</div>
+    <div class="updated" id="last-updated">Updated: 5:30 am Tuesday, September 29, 2026</div>
   </div>
 
   <!-- Alerts from weather.bm -->
   <div class="alert-banner" id="alert-banner">
-<div class="alert-item"><strong>Small Craft Warning</strong><span class="alert-valid"></span></div>
-<div class="alert-item"><strong>Thunderstorm Advisory</strong><span class="alert-valid"></span></div>
+    <strong id="alert-title"></strong>
+    <span id="alert-body"></span>
+    <div class="alert-valid" id="alert-valid"></div>
   </div>
 
   <!-- Current conditions from weather.bm -->
@@ -343,11 +344,11 @@ body {
       <div class="stats-grid">
         <div class="stat-card">
           <div class="label">Temperature</div>
-          <div class="value"><span id="temp-value">27.0</span><span class="unit">°C</span></div>
+          <div class="value"><span id="temp-value">26.0</span><span class="unit">°C</span></div>
         </div>
         <div class="stat-card">
           <div class="label">Humidity</div>
-          <div class="value"><span id="humidity-value">89</span><span class="unit">%</span></div>
+          <div class="value"><span id="humidity-value">92</span><span class="unit">%</span></div>
         </div>
       </div>
     </div>
@@ -371,11 +372,12 @@ body {
     <div class="section-header">5-Day Forecast</div>
     <div class="section-body">
       <ul class="forecast-list" id="forecast-list">
-<li class="forecast-item"><span class="forecast-day">Tonight</span><span class="forecast-text">Remaining cloudy with further showers, some heavy & thundery...</span><span class="forecast-temp">Lo <span>26°C</span></span></li>
-<li class="forecast-item"><span class="forecast-day">Sunday</span><span class="forecast-text">Cloudy and damp start, but soon becoming drier and brighter...</span><span class="forecast-temp">Hi <span>29°C</span></span><span class="forecast-temp">Lo <span>26°C</span></span></li>
-<li class="forecast-item"><span class="forecast-day">Monday</span><span class="forecast-text">Some sunshine, cloudier night with a few showers around...</span><span class="forecast-temp">Hi <span>29°C</span></span><span class="forecast-temp">Lo <span>26°C</span></span></li>
-<li class="forecast-item"><span class="forecast-day">Tuesday</span><span class="forecast-text">Sunny periods with an early shower or two...</span><span class="forecast-temp">Hi <span>29°C</span></span><span class="forecast-temp">Lo <span>25°C</span></span></li>
-<li class="forecast-item"><span class="forecast-day">Wednesday</span><span class="forecast-text">Abundant sunshine...</span><span class="forecast-temp">Hi <span>28°C</span></span><span class="forecast-temp">Lo <span>25°C</span></span></li>
+<li class="forecast-item"><span class="forecast-day">Today</span><span class="forecast-text">Early cloud with showers around, drier & brighter after noon...</span><span class="forecast-temp">Hi <span>29°C</span></span></li>
+<li class="forecast-item"><span class="forecast-day">Tonight</span><span class="forecast-text">Partly cloudy...</span><span class="forecast-temp">Lo <span>24°C</span></span></li>
+<li class="forecast-item"><span class="forecast-day">Wednesday</span><span class="forecast-text">More sun than cloud...</span><span class="forecast-temp">Hi <span>28°C</span></span><span class="forecast-temp">Lo <span>24°C</span></span></li>
+<li class="forecast-item"><span class="forecast-day">Thursday</span><span class="forecast-text">Plenty of sunshine...</span><span class="forecast-temp">Hi <span>29°C</span></span><span class="forecast-temp">Lo <span>24°C</span></span></li>
+<li class="forecast-item"><span class="forecast-day">Friday</span><span class="forecast-text">Long sunny spells interrupted by the odd sprinkle...</span><span class="forecast-temp">Hi <span>29°C</span></span><span class="forecast-temp">Lo <span>24°C</span></span></li>
+<li class="forecast-item"><span class="forecast-day">Saturday</span><span class="forecast-text">Generally sunny despite the low chance of the odd shower...</span><span class="forecast-temp">Hi <span>29°C</span></span><span class="forecast-temp">Lo <span>24°C</span></span></li>
       </ul>
     </div>
   </div>
@@ -387,24 +389,24 @@ body {
       <div class="sun-row" id="sun-times">
         <div class="sun-item">
           <span class="sun-label">Sunrise</span>
-          <span class="sun-time" id="sunrise-time">7:09 am</span>
+          <span class="sun-time" id="sunrise-time">7:11 am</span>
         </div>
         <div class="sun-item">
           <span class="sun-label">Sunset</span>
-          <span class="sun-time" id="sunset-time">7:10 pm</span>
+          <span class="sun-time" id="sunset-time">7:06 pm</span>
         </div>
         <div class="sun-item">
           <span class="sun-label">Moon Phase</span>
-          <span class="sun-time" id="moon-phase">Full Moon</span>
+          <span class="sun-time" id="moon-phase">--</span>
         </div>
       </div>
       <div style="margin-top:16px;">
         <div style="font-size:13px; text-transform:uppercase; letter-spacing:0.8px; color:var(--muted); font-weight:600; margin-bottom:8px;">Tides — St. George's Island</div>
         <ul class="tide-list" id="tide-list">
-<li class="tide-item"><span class="tide-type">02:46</span><span class="tide-height">0.4m / 1.3ft</span></li>
-<li class="tide-item"><span class="tide-type">09:03</span><span class="tide-height">1.2m / 3.9ft</span></li>
-<li class="tide-item"><span class="tide-type">15:09</span><span class="tide-height">0.4m / 1.3ft</span></li>
-<li class="tide-item"><span class="tide-type">21:19</span><span class="tide-height">1.2m / 3.9ft</span></li>
+<li class="tide-item"><span class="tide-type">04:32</span><span class="tide-height">0.3m / 1.0ft</span></li>
+<li class="tide-item"><span class="tide-type">11:00</span><span class="tide-height">1.3m / 4.3ft</span></li>
+<li class="tide-item"><span class="tide-type">17:24</span><span class="tide-height">0.3m / 1.0ft</span></li>
+<li class="tide-item"><span class="tide-type">23:14</span><span class="tide-height">1.1m / 3.6ft</span></li>
         </ul>
       </div>
     </div>
