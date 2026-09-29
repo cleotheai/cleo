@@ -8,7 +8,9 @@ import json, os
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_PATH = os.path.join(SCRIPT_DIR, "weather_data.json")
-TEMPLATE_PATH = os.path.join(SCRIPT_DIR, "index.html")
+# Template is the clean placeholder version — a separate file so repeated
+# builds don't read an already-populated index.html and fail to find placeholders.
+TEMPLATE_PATH = os.path.join(SCRIPT_DIR, "index_template.html")
 OUTPUT_PATH = os.path.join(SCRIPT_DIR, "index.html")
 
 # Read data
