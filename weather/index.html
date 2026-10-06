@@ -183,6 +183,57 @@ body {
   display: block;
 }
 
+/* Wind forecast */
+.wind-list {
+  list-style: none;
+}
+
+.wind-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border);
+  gap: 12px;
+  font-size: 14px;
+}
+
+.wind-item:last-child { border-bottom: none; }
+
+.wind-day {
+  min-width: 80px;
+  font-weight: 600;
+}
+
+.wind-text {
+  flex: 1;
+  color: var(--text);
+}
+
+.wind-flag {
+  font-size: 11px;
+  color: var(--alert-amber);
+  background: rgba(255, 183, 77, 0.12);
+  padding: 2px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+.wind-alert {
+  background: var(--alert-amber);
+  color: #1a1d27;
+  border-radius: 4px;
+  padding: 10px 14px;
+  margin-bottom: 12px;
+  font-size: 13px;
+}
+
+.wind-alert strong {
+  display: block;
+  margin-bottom: 2px;
+  font-size: 14px;
+}
+
 /* Forecast */
 .forecast-list {
   list-style: none;
@@ -362,9 +413,18 @@ body {
         <div id="windguru-widget"></div>
       </div>
     </div>
-    <div class="wg-attribution">
-      Wind &amp; wave data from Windguru — <a href="https://www.windguru.cz/" target="_blank" rel="noopener">windguru.cz</a>
+  </div>
+
+  <!-- Wind forecast from Windguru widget -->
+  <div class="section">
+    <div class="section-header">Wind Forecast</div>
+    <div class="wind-alert" id="wind-alert-placeholder" style="display: none;">
+      <strong id="wind-alert-title"></strong>
+      <span id="wind-alert-text"></span>
     </div>
+    <ul class="wind-list" id="wind-list">
+      <li class="wind-item"><span class="wind-day">Loading...</span></li>
+    </ul>
   </div>
 
   <!-- 5-day forecast from weather.bm -->
