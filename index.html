@@ -188,7 +188,19 @@ body {
     <a class="card" href="weather/">
       <div class="card-label">Weather</div>
       <div class="card-title">Bermuda Weather</div>
-      <div class="card-desc">Current: 29°C, 75% humidity • Forecast: Today 29°C, Tonight 25°C • Sunrise 6:56 am, Sunset 7:38 pm • Wind & waves via Windguru</div>
+      <script id="wg_fwdg_32728_100_1791298716654">
+(function (window, document) {
+  var loader = function () {
+    var arg = ["s=32728","m=100","mw=84","uid=wg_fwdg_32728_100_1791298716654","wj=knots","tj=c","waj=m","tij=cm","odh=0","doh=24","fhours=48","hrsm=1","vt=forecasts","lng=en","idbs=1","ts=1","p=WINDSPD,GUST,SMER,APCP1s"];
+    var script = document.createElement("script");
+    var tag = document.getElementsByTagName("script")[0];
+    script.src = "https://www.windguru.cz/js/widget.php?"+(arg.join("&"));
+    tag.parentNode.insertBefore(script, tag);
+  };
+  window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+})(window, document);
+</script>
+      <div class="card-desc">Windguru widget embedded (48h forecast, knots) — wind, gust, swell, rain</div>
     </a>
 
     <a class="card" href="reviews/">
