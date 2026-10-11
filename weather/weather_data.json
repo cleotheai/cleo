@@ -1,9 +1,9 @@
 {
   "current": {
-    "recorded_at": "6:55 am",
+    "recorded_at": "3:55 am",
     "condition": "Partly Cloudy",
     "temperature_c": 25.0,
-    "humidity": 74
+    "humidity": 70
   },
   "alerts": [
     {
@@ -11,82 +11,71 @@
     }
   ],
   "forecast": {
-    "issue": "5:30 am Saturday, October 10, 2026",
+    "issue": "11:30 pm Saturday, October 10, 2026",
     "synopsis": null,
-    "headline": "Gradually becoming breezy...",
+    "headline": "A breezy and occasionally cloudy night...",
     "periods": [
       {
-        "name": "Today",
-        "condition": "Today - Mix of sun and cloud...",
-        "temp_high": 28,
-        "wind_text": "northeasterly light to moderate, increasing moderate towards evening.."
-      },
-      {
         "name": "Tonight",
-        "condition": "Tonight - Occasionally cloudy with a light shower possible...",
+        "condition": "Tonight - Occasionally cloudy...",
         "temp_low": 24,
-        "wind_text": "northeasterly moderate, occasionally increasing moderate to strong towards dawn.."
+        "wind_text": "east-northeasterly moderate, occasionally increasing moderate to strong towards dawn.."
       },
       {
         "name": "Sunday",
-        "condition": "Sunday - Variable cloud with some sunny spells...",
+        "condition": "Sunday - Plenty of sunshine...",
         "temp_high": 28,
         "temp_low": 24,
-        "wind_text": "east-northeasterly moderate, occasionally increasing moderate to strong in the morning, then gradually veering southeasterly moderate overnight.."
+        "wind_text": "east-northeasterly moderate, occasionally increasing moderate to strong early morning, then gradually veering southeasterly moderate by late night.."
       },
       {
         "name": "Monday",
-        "condition": "Monday - Cloud cover increasing overnight, chance of a shower or two...",
+        "condition": "Monday - Sunny spells with the chance of a few showers developing...",
         "temp_high": 28,
         "temp_low": 25,
         "wind_text": "south-southeasterly moderate, veering southerly by afternoon, then increasing southwesterly moderate to strong overnight.."
       },
       {
         "name": "Tuesday",
-        "condition": "Tuesday - Cloudy and damp start, becoming brighter later...",
+        "condition": "Tuesday - Cloudy and damp start, becoming drier and brighter later...",
         "temp_high": 28,
         "temp_low": 24,
-        "wind_text": "west-southwesterly moderate, veering west-northwesterly light to moderate later.."
+        "wind_text": "west-southwesterly moderate to strong, soon easing moderate and veering west-northwesterly in the afternoon, then easing light to moderate during the evening.."
       },
       {
         "name": "Wednesday",
-        "condition": "Wednesday - Variable cloud with a passing shower or two...",
-        "temp_high": 27,
+        "condition": "Wednesday - Partly cloudy skies with a possible shower or two...",
+        "temp_high": 28,
         "temp_low": 24,
-        "wind_text": "west-northwesterly light to moderate, gradually veering northerly.."
+        "wind_text": "west-northwesterly light to moderate, tending to veer northerly and ease light later.."
       }
     ]
   },
   "marine": {},
-  "sun": {
-    "sunrise": "6:59 am",
-    "sunset": "7:32 pm",
-    "moon_rise": "6:20 am",
-    "moon_set": "7:15 pm"
-  },
+  "sun": {},
   "tides": [
     {
-      "time": "02:27",
+      "time": "03:11",
       "height_m": 0.3,
       "height_ft": 1.0
     },
     {
-      "time": "08:32",
+      "time": "09:19",
       "height_m": 1.2,
       "height_ft": 3.9
     },
     {
-      "time": "14:42",
+      "time": "15:31",
       "height_m": 0.3,
       "height_ft": 1.0
     },
     {
-      "time": "20:59",
-      "height_m": 1.3,
-      "height_ft": 4.3
+      "time": "21:43",
+      "height_m": 1.2,
+      "height_ft": 3.9
     }
   ],
-  "fetched_at": "2026-10-10 06:53:51 ADT",
+  "fetched_at": "2026-10-11 06:00:55 ADT",
   "wind_from": "Windguru widget (sole wind/wave source \u2014 weather.bm wind/wave data excluded)",
-  "last_updated": "5:30 am Saturday, October 10, 2026"
+  "last_updated": "11:30 pm Saturday, October 10, 2026"
 }
