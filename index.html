@@ -5,6 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cleo Dashboard</title>
 <style>
+
+/* Navbar */
+.navbar {
+  text-align: center;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+  font-size: 14px;
+}
+.navbar a {
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0 8px;
+}
+.navbar a:hover {
+  text-decoration: underline;
+}
 :root {
   --bg: #0f1117;
   --card: #1a1d27;
@@ -171,6 +188,11 @@ body {
 </head>
 <body>
 <div class="container">
+ <nav class="navbar">
+   <a href="/">Home</a> |
+   <a href="weather/">Weather</a> |
+   <a href="reviews/">Reviews</a>
+ </nav>
 
   <div class="header">
     <h1>Cleo Dashboard</h1>
