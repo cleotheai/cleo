@@ -2,87 +2,91 @@
   "current": {
     "recorded_at": "5:55 am",
     "condition": "Mostly Cloudy",
-    "temperature_c": 26.0,
-    "humidity": 80
+    "temperature_c": 27.0,
+    "humidity": 86
   },
-  "alerts": [],
+  "alerts": [
+    {
+      "title": "Small Craft Warning"
+    }
+  ],
   "forecast": {
-    "issue": "5:30 am Sunday, October 18, 2026",
+    "issue": "5:30 am Monday, October 19, 2026",
     "synopsis": null,
-    "headline": "A southerly breeze builds with a possible shower...",
+    "headline": "A few showers developing...",
     "periods": [
       {
         "name": "Today",
-        "condition": "Today - Sunny spells outside of any passing showers...",
+        "condition": "Today - Cloudy spells with a shower or 2 bubbling up from the south...",
         "temp_high": 28,
-        "wind_text": "southerly light to moderate, backing south-southeasterly towards evening.."
+        "wind_text": "south-southeasterly moderate, occasionally increasing moderate to strong with stronger gusts in developing showers.."
       },
       {
         "name": "Tonight",
-        "condition": "Tonight - Occasionally cloudy with the odd shower possible...",
+        "condition": "Tonight - Thickening cloud with showers becoming more organized...",
         "temp_low": 25,
-        "wind_text": "south-southeasterly moderate, possibly increasing moderate to strong towards dawn.."
-      },
-      {
-        "name": "Monday",
-        "condition": "Monday - Thickening cloud cover with a few showers developing later...",
-        "temp_high": 28,
-        "temp_low": 24,
-        "wind_text": "south-southeasterly moderate, possibly increasing moderate to strong at times with stronger gusts in and around showers.."
+        "wind_text": "south-southeasterly moderate, occasionally increasing moderate to strong with stronger gusts in and around showers.."
       },
       {
         "name": "Tuesday",
-        "condition": "Tuesday - Rather cloudy and showery with some improvement late night...",
-        "temp_high": 27,
+        "condition": "Tuesday - Cloudy with showers, possibly becoming heavy at times...",
+        "temp_high": 28,
         "temp_low": 24,
-        "wind_text": "south-southeasterly moderate, veering southwesterly moderate overnight.."
+        "wind_text": "south-southeasterly moderate to strong, soon veering south-southwesterly moderate, possibly easing light to moderate for a time, further veering southwesterly overnight.."
       },
       {
         "name": "Wednesday",
         "condition": "Wednesday - Sunny periods with the odd shower around...",
         "temp_high": 28,
         "temp_low": 24,
-        "wind_text": "southwesterly moderate, possibly easing light to moderate at times, veering westerly overnight.."
+        "wind_text": "southwesterly moderate, veering west-southwesterly overnight.."
       },
       {
         "name": "Thursday",
-        "condition": "Thursday - Mix of sun and cloud with a brief shower possible...",
-        "temp_high": 27,
+        "condition": "Thursday - Mix of sun and cloud with a brief passing shower likely...",
+        "temp_high": 28,
         "temp_low": 24,
-        "wind_text": "westerly moderate, easing west-northwesterly light to moderate later.."
+        "wind_text": "west-southwesterly moderate, soon veering westerly, possibly increasing moderate to strong towards evening.."
+      },
+      {
+        "name": "Friday",
+        "condition": "Friday - Early cloud with a couple showers, becoming brighter later...",
+        "temp_high": 27,
+        "temp_low": 22,
+        "wind_text": "northwesterly moderate, gradually veering north-northeasterly and increasing moderate to strong overnight.."
       }
     ]
   },
   "marine": {},
   "sun": {
-    "sunrise": "7:04 am",
-    "sunset": "7:21 pm",
-    "moon_rise": "2:22 pm",
-    "moon_set": ""
+    "sunrise": "7:05 am",
+    "sunset": "7:20 pm",
+    "moon_rise": "3:11 pm",
+    "moon_set": "0:06 am"
   },
   "tides": [
     {
-      "time": "01:55",
-      "height_m": 0.9,
-      "height_ft": 3.0
+      "time": "02:51",
+      "height_m": 0.8,
+      "height_ft": 2.6
     },
     {
-      "time": "07:34",
+      "time": "08:29",
       "height_m": 0.5,
       "height_ft": 1.6
     },
     {
-      "time": "14:31",
+      "time": "15:29",
       "height_m": 1.0,
       "height_ft": 3.3
     },
     {
-      "time": "21:08",
-      "height_m": 0.5,
-      "height_ft": 1.6
+      "time": "22:11",
+      "height_m": 0.6,
+      "height_ft": 2.0
     }
   ],
-  "fetched_at": "2026-10-18 06:00:59 ADT",
+  "fetched_at": "2026-10-19 06:00:30 ADT",
   "wind_from": "Windguru widget (sole wind/wave source \u2014 weather.bm wind/wave data excluded)",
-  "last_updated": "5:30 am Sunday, October 18, 2026"
+  "last_updated": "5:30 am Monday, October 19, 2026"
 }
